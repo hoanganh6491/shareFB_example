@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525D6FD03D944CB36B20828E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B036C78ED9E8F912DFB5AAA /* libPods.a */; };
 		91A71CC81B3CE62300CBD791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A71CC71B3CE62300CBD791 /* AppDelegate.swift */; };
 		91A71CCA1B3CE62300CBD791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A71CC91B3CE62300CBD791 /* ViewController.swift */; };
 		91A71CCD1B3CE62300CBD791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A71CCB1B3CE62300CBD791 /* Main.storyboard */; };
 		91A71CCF1B3CE62300CBD791 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A71CCE1B3CE62300CBD791 /* Images.xcassets */; };
 		91A71CD21B3CE62300CBD791 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A71CD01B3CE62300CBD791 /* LaunchScreen.xib */; };
 		91A71CDE1B3CE62300CBD791 /* sharefb_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A71CDD1B3CE62300CBD791 /* sharefb_exampleTests.swift */; };
+		91A71CEC1B3D369900CBD791 /* FacebookShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A71CEB1B3D369900CBD791 /* FacebookShareService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B036C78ED9E8F912DFB5AAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A71CC21B3CE62300CBD791 /* sharefb_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sharefb_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A71CC61B3CE62300CBD791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A71CC71B3CE62300CBD791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,10 @@
 		91A71CD71B3CE62300CBD791 /* sharefb_exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sharefb_exampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A71CDC1B3CE62300CBD791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A71CDD1B3CE62300CBD791 /* sharefb_exampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharefb_exampleTests.swift; sourceTree = "<group>"; };
+		91A71CE71B3CEF2A00CBD791 /* sharefb_example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sharefb_example-Bridging-Header.h"; sourceTree = "<group>"; };
+		91A71CEB1B3D369900CBD791 /* FacebookShareService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookShareService.swift; sourceTree = "<group>"; };
+		A9225302FDEC2FC33AF60D76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3CC378A67DE11503EA2F76C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525D6FD03D944CB36B20828E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71C2491D6AA8B5451AF49B78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B036C78ED9E8F912DFB5AAA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91A71CB91B3CE62300CBD791 = {
 			isa = PBXGroup;
 			children = (
 				91A71CC41B3CE62300CBD791 /* sharefb_example */,
 				91A71CDA1B3CE62300CBD791 /* sharefb_exampleTests */,
 				91A71CC31B3CE62300CBD791 /* Products */,
+				C9488765C098845A82615F43 /* Pods */,
+				71C2491D6AA8B5451AF49B78 /* Frameworks */,
+				91A71CE71B3CEF2A00CBD791 /* sharefb_example-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +96,7 @@
 		91A71CC41B3CE62300CBD791 /* sharefb_example */ = {
 			isa = PBXGroup;
 			children = (
+				91A71CEB1B3D369900CBD791 /* FacebookShareService.swift */,
 				91A71CC71B3CE62300CBD791 /* AppDelegate.swift */,
 				91A71CC91B3CE62300CBD791 /* ViewController.swift */,
 				91A71CCB1B3CE62300CBD791 /* Main.storyboard */,
@@ -112,6 +132,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C9488765C098845A82615F43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CC378A67DE11503EA2F76C /* Pods.debug.xcconfig */,
+				A9225302FDEC2FC33AF60D76 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91A71CE11B3CE62300CBD791 /* Build configuration list for PBXNativeTarget "sharefb_example" */;
 			buildPhases = (
+				07EEBBF6BE27E68FAD11ACB2 /* Check Pods Manifest.lock */,
 				91A71CBE1B3CE62300CBD791 /* Sources */,
 				91A71CBF1B3CE62300CBD791 /* Frameworks */,
 				91A71CC01B3CE62300CBD791 /* Resources */,
+				A2027F31E12D516F75AE453D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +238,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07EEBBF6BE27E68FAD11ACB2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2027F31E12D516F75AE453D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91A71CBE1B3CE62300CBD791 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +278,7 @@
 			files = (
 				91A71CCA1B3CE62300CBD791 /* ViewController.swift in Sources */,
 				91A71CC81B3CE62300CBD791 /* AppDelegate.swift in Sources */,
+				91A71CEC1B3D369900CBD791 /* FacebookShareService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +403,34 @@
 		};
 		91A71CE21B3CE62300CBD791 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CC378A67DE11503EA2F76C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: phan hai (346EK46QDJ)";
 				INFOPLIST_FILE = sharefb_example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4a2fbd3b-fc70-458f-b515-5ecdb6da9fef";
+				SWIFT_OBJC_BRIDGING_HEADER = "sharefb_example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		91A71CE31B3CE62300CBD791 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9225302FDEC2FC33AF60D76 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: phan hai (346EK46QDJ)";
 				INFOPLIST_FILE = sharefb_example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4a2fbd3b-fc70-458f-b515-5ecdb6da9fef";
+				SWIFT_OBJC_BRIDGING_HEADER = "sharefb_example-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +487,7 @@
 				91A71CE31B3CE62300CBD791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A71CE41B3CE62300CBD791 /* Build configuration list for PBXNativeTarget "sharefb_exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +496,7 @@
 				91A71CE61B3CE62300CBD791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
